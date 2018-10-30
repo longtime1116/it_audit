@@ -8,6 +8,8 @@ module.exports.processing_to_processed = async (event, context) => {
     branchName: 'master',
     repositoryName: repo_name
   };
+
+  // TODO: 無駄な入れ子をなくす
   codecommit.getBranch(branch_info, function(err, data) {
     if (err) console.log(err, err.stack);
     else     var lastCommitId = data.branch.commitId;
