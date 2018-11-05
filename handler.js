@@ -23,9 +23,11 @@ module.exports.processing_to_processed = async (event, context) => {
       if (err) console.log(err, err.stack);
       else     var lastCommitComment = data.commit.message;
 
-      lastCommitComment = "Merge DEV-21163" // 動作確認用
+      // ticket number for test
+      // lastCommitComment = "Merge DEV-21163" // 動作確認用
       var targetTicketName = lastCommitComment.match(/DEV-\d{1,5}/)[0];
 
+      // Revertが含まれたら？
       if (lastCommitComment.match(/DEV-\d{1,5}/)) updateTicketStatus(targetTicketName);
     })
   });
@@ -36,7 +38,7 @@ module.exports.processing_to_processed = async (event, context) => {
       url: ticketUrl,
       method: 'PATCH',
       form: {
-        statusId: 2
+        statusId: 3
       },
       headers: {
           'Accept': '*/*'
@@ -48,6 +50,3 @@ module.exports.processing_to_processed = async (event, context) => {
     });
   }
 };
-
-
-// ticket number for test is DEV-21163
