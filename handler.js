@@ -1,4 +1,5 @@
 'use strict';
+var request = require ('request');
 var repo_name = 'tamaiItAuditTest';
 var AWS = require('aws-sdk');
 var codecommit = new AWS.CodeCommit();
@@ -21,9 +22,32 @@ module.exports.processing_to_processed = async (event, context) => {
     codecommit.getCommit(commit_info, function(err, data) {
       if (err) console.log(err, err.stack);
       else     var lastCommitComment = data.commit.message;
-      console.log(lastCommitComment);
+
+      lastCommitComment = "Merge DEV-21163" // 動作確認用
+      var targetTicketName = lastCommitComment.match(/DEV-\d{1,5}/)[0];
+
+      if (lastCommitComment.match(/DEV-\d{1,5}/)) updateTicketStatus(targetTicketName);
     })
   });
+
+  function updateTicketStatus(targetTicketName){
+    var ticket_url = "https://pixta.backlog.jp/api/v2/issues/" + targetTicketName + "?apiKey=" + process.env.BACKLOG_API_KEY
+    var data = {
+      url: ticket_url,
+      method: 'PATCH',
+      form: {
+        statusId: 2
+      },
+      headers: {
+          'Accept': '*/*'
+      }
+    };
+
+    request.patch(data, function(data, callback){
+      console.log(callback);
+    });
+  }
 };
 
 
+// ticket number for test is DEV-21163
