@@ -1,25 +1,25 @@
 'use strict';
 var request = require ('request');
-var repo_name = 'tamaiItAuditTest';
+var repoName = 'tamaiItAuditTest';
 var AWS = require('aws-sdk');
 var codecommit = new AWS.CodeCommit();
 
 module.exports.processing_to_processed = async (event, context) => {
-  var branch_info = {
+  var branchDetail = {
     branchName: 'master',
-    repositoryName: repo_name
+    repositoryName: repoName
   };
 
   // TODO: 無駄な入れ子をなくす
-  codecommit.getBranch(branch_info, function(err, data) {
+  codecommit.getBranch(branchDetail, function(err, data) {
     if (err) console.log(err, err.stack);
     else     var lastCommitId = data.branch.commitId;
 
-    var commit_info = {
+    var commitDetail = {
       commitId: lastCommitId,
-      repositoryName: repo_name
+      repositoryName: repoName
     }
-    codecommit.getCommit(commit_info, function(err, data) {
+    codecommit.getCommit(commitDetail, function(err, data) {
       if (err) console.log(err, err.stack);
       else     var lastCommitComment = data.commit.message;
 
@@ -31,9 +31,9 @@ module.exports.processing_to_processed = async (event, context) => {
   });
 
   function updateTicketStatus(targetTicketName){
-    var ticket_url = "https://pixta.backlog.jp/api/v2/issues/" + targetTicketName + "?apiKey=" + process.env.BACKLOG_API_KEY
+    var ticketUrl = "https://pixta.backlog.jp/api/v2/issues/" + targetTicketName + "?apiKey=" + process.env.BACKLOG_API_KEY
     var data = {
-      url: ticket_url,
+      url: ticketUrl,
       method: 'PATCH',
       form: {
         statusId: 2
