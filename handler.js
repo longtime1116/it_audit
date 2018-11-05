@@ -1,7 +1,9 @@
 'use strict';
+
+// TODO: lambda に request, aws-sdk をインストール
 var request = require('request');
-var repoName = 'tamaiItAuditTest';
 var AWS = require('aws-sdk');
+var repoName = 'tamaiItAuditTest';
 var codecommit = new AWS.CodeCommit();
 
 module.exports.processing_to_processed = async (event, context) => {

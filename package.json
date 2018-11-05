@@ -5,7 +5,10 @@
   "repository": "git@gitlab.pixta.jp:tamaiayumi/it_audit.git",
   "author": "tamaiayumi <ayumi.tamai@pixta.co.jp>",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "aws-sdk": "^2.348.0",
+    "request": "^2.88.0"
+  },
   "devDependencies": {
     "eslint": "^5.8.0",
     "eslint-config-prettier": "^3.1.0",
