@@ -11,7 +11,7 @@ var branchDetail = {
   repositoryName: repoName,
 };
 
-module.exports.processing_to_processed = (event, context) => {
+module.exports.update_backlog = (event, context) => {
   codecommit.getBranch(branchDetail, function(err, data) {
     if (err) {
       console.log(err, err.stack);

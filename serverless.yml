@@ -1,4 +1,4 @@
-service: it-audit-backlog # NOTE: update this with your service name
+service: it-audit-backlog
 provider:
   name: aws
   runtime: nodejs8.10
@@ -18,13 +18,13 @@ provider:
             ['', ['arn:aws:s3:::', { 'Ref': 'ServerlessDeploymentBucket' }]],
         }
 functions:
-  processing_to_processed:
-    handler: handler.processing_to_processed
+  processing_to_processed: # TODO: 本番適用時、関数名を変える
+    handler: handler.update_backlog
     vpc:
       securityGroupIds:
-        - sg-0cfa33f10c411fdc1 # VPC作成後要変更
+        - sg-0cfa33f10c411fdc1 # TODO: VPC作成後要変更
       subnetIds:
-        - subnet-0dc7f4f208edc9c8d # VPC作成後要変更 / Private Subnet Id のみ
+        - subnet-0dc7f4f208edc9c8d # TODO: VPC作成後要変更 / Private Subnet Id のみ
     events:
       - sns:
           topicName: processing_to_processed
