@@ -3,6 +3,8 @@ provider:
   name: aws
   runtime: nodejs8.10
   region: ap-northeast-1
+  environment:
+    BACKLOG_API_KEY: ${file(./variables.yml):BACKLOG_API_KEY} # 本番用API Key作成後用変更
   iamRoleStatements:
     - Effect: 'Allow'
       Action:
@@ -22,8 +24,7 @@ functions:
       securityGroupIds:
         - sg-0cfa33f10c411fdc1 # VPC作成後要変更
       subnetIds:
-        - subnet-0d47451e12114bb11 # VPC作成後要変更
-        - subnet-0dc7f4f208edc9c8d # VPC作成後要変更
+        - subnet-0dc7f4f208edc9c8d # VPC作成後要変更 / Private Subnet Id のみ
     events:
       - sns:
           topicName: processing_to_processed
