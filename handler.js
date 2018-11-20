@@ -2,7 +2,7 @@
 
 var request = require('request');
 var AWS = require('aws-sdk');
-var repoName = 'tamaiItAuditTest';
+var repoName = 'TokinagaItAuditTest';
 
 var codecommit = new AWS.CodeCommit();
 
@@ -31,10 +31,14 @@ module.exports.update_backlog = (event, context) => {
         var lastCommitComment = data.commit.message;
       }
 
-      var targetTicketName = lastCommitComment.match(/DEV-\d{1,5}/)[0];
-      var revertComment = lastCommitComment.match(/Revert/g);
-      var revertCommentCount = revertComment ? revertComment.length : 0;
-      var isReverted = revertCommentCount % 2 == 1;
+      //var targetTicketName = lastCommitComment.match(/DEV-\d{1,5}/)[0];
+      //var revertComment = lastCommitComment.match(/Revert/g);
+      //var revertCommentCount = revertComment ? revertComment.length : 0;
+      //var isReverted = revertCommentCount % 2 == 1;
+      // tokinaga
+      var targetTicketName = "DEV-21163"
+      var lastCommitComment = "DEV-21163"
+      var isReverted = false;
 
       if (isReverted) {
         console.log(targetTicketName + "'s head commit was revert commit");

@@ -1,4 +1,6 @@
-service: it-audit-backlog
+package:
+  excludeDevDependencies: false
+service: it-audit-backlog-tokinaga
 provider:
   name: aws
   runtime: nodejs8.10
@@ -28,5 +30,9 @@ functions:
         # - ${file(./variables.yml):SUBNET_ID_2}
     events:
       - sns:
-          topicName: processing_to_processed
-          displayName: backlog
+          topicName: processing_to_processed-tokinaga
+          displayName: backlog-tokinaga
+custom:
+  defaultStage: dev
+  profiles:
+    dev: sample
