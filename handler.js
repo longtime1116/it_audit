@@ -1,71 +1,73 @@
 'use strict';
 
-var request = require('request');
-var AWS = require('aws-sdk');
-var repoName = 'TokinagaItAuditTest';
+const request = require('request');
+const AWS = require('aws-sdk');
+const repoName = 'TokinagaItAuditTest';
 
-var codecommit = new AWS.CodeCommit();
+const codecommit = new AWS.CodeCommit();
 
-var branchDetail = {
-  branchName: 'master',
-  repositoryName: repoName,
-};
-
-module.exports.update_backlog = (event, context) => {
-  codecommit.getBranch(branchDetail, function(err, data) {
-    if (err) {
-      console.log(err, err.stack);
-    } else {
-      var lastCommitId = data.branch.commitId;
-    }
-
-    var commitDetail = {
-      commitId: lastCommitId,
-      repositoryName: repoName,
-    };
-
-    codecommit.getCommit(commitDetail, function(err, data) {
-      if (err) {
-        console.log(err, err.stack);
-      } else {
-        var lastCommitComment = data.commit.message;
-      }
-
-      //var targetTicketName = lastCommitComment.match(/DEV-\d{1,5}/)[0];
-      //var revertComment = lastCommitComment.match(/Revert/g);
-      //var revertCommentCount = revertComment ? revertComment.length : 0;
-      //var isReverted = revertCommentCount % 2 == 1;
-      var targetTicketName = "DEV-21163"
-      var lastCommitComment = "DEV-21163"
-      var isReverted = false;
-
-      if (isReverted) {
-        console.log(targetTicketName + "'s head commit was revert commit");
-      } else if (!isReverted && lastCommitComment.match(/DEV-\d{1,5}/)) {
-        updateTicketStatus(targetTicketName);
-      }
-    });
-  });
-
-  function updateTicketStatus(targetTicketName) {
-    var ticketUrl =
-      'https://pixta.backlog.jp/api/v2/issues/' +
-      targetTicketName +
-      '?apiKey=' +
-      process.env.BACKLOG_API_KEY;
-    var data = {
-      url: ticketUrl,
-      method: 'PATCH',
-      form: {
-        statusId: 3,
-      },
-      headers: {
-        Accept: '*/*',
-      },
-    };
-    request(data, function optionalCallback(err, httpResponse, body) {
-      console.log('Result in ' + targetTicketName + ':');
-      console.log(body);
-    });
+module.exports.update_backlog = async (event, context) => {
+  const branchDetail = {
+    branchName: 'master',
+    repositoryName: repoName,
+  };
+  let commitBranch;
+  try {
+    commitBranch = await codecommit.getBranch(branchDetail).promise();
+  } catch (err) {
+    console.log(err);
+    return err;
   }
+  const lastCommitId = commitBranch.branch.commitId;
+  console.log(lastCommitId);
+
+  const commitDetail = {
+    commitId: lastCommitId,
+    repositoryName: repoName,
+  };
+  let resultCommit;
+  try {
+    resultCommit = await codecommit.getCommit(commitDetail).promise();
+  } catch (err) {
+    console.log(err);
+    return err;
+  }
+  const lastCommitMessage = resultCommit.commit.message;
+  console.log(lastCommitMessage);
+
+  if (!lastCommitMessage.match(/Merge\ branch/)) return;
+
+  const targetMessage = lastCommitMessage.match(/DEV-\d{1,5}/);
+  if (targetMessage === null) return;
+
+  const revertMessage = lastCommitMessage.match(/Revert/g);
+  const revertMessageCount = revertMessage ? revertMessage.length : 0;
+  if (revertMessageCount % 2 == 1) {
+    console.log(targetMessage[0] + "'s head commit was revert commit");
+    return;
+  }
+
+  updateTicketStatus(targetMessage[0]);
 };
+
+function updateTicketStatus(targetTicketName) {
+  const ticketUrl =
+    'https://pixta.backlog.jp/api/v2/issues/' +
+    targetTicketName +
+    '?apiKey=' +
+    process.env.BACKLOG_API_KEY;
+  const data = {
+    url: ticketUrl,
+    method: 'PATCH',
+    form: {
+      statusId: 3,
+    },
+    headers: {
+      Accept: '*/*',
+    },
+  };
+  request(data, function optionalCallback(err, httpResponse, body) {
+    console.log('Result in ' + targetTicketName + ':');
+    console.log(body);
+  });
+}
