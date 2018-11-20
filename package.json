@@ -2,8 +2,8 @@
   "name": "it_audit",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@gitlab.pixta.jp:tamaiayumi/it_audit.git",
-  "author": "tamaiayumi <ayumi.tamai@pixta.co.jp>",
+  "repository": "git@github.com:longtime1116/it_audit.git",
+  "author": "tokinaga shumo",
   "license": "MIT",
   "dependencies": {
     "aws-sdk": "^2.348.0",
