@@ -22,12 +22,6 @@ provider:
 functions:
   processing_to_processed: # TODO: 本番適用時、関数名を変える
     handler: handler.update_backlog
-    vpc:
-      securityGroupIds:
-        - ${file(./variables.yml):SECURITY_GROUP_ID}
-      subnetIds:
-        - ${file(./variables.yml):SUBNET_ID_1}
-        # - ${file(./variables.yml):SUBNET_ID_2}
     events:
       - sns:
           topicName: processing_to_processed-tokinaga

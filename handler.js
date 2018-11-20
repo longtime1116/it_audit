@@ -35,7 +35,6 @@ module.exports.update_backlog = (event, context) => {
       //var revertComment = lastCommitComment.match(/Revert/g);
       //var revertCommentCount = revertComment ? revertComment.length : 0;
       //var isReverted = revertCommentCount % 2 == 1;
-      // tokinaga
       var targetTicketName = "DEV-21163"
       var lastCommitComment = "DEV-21163"
       var isReverted = false;
