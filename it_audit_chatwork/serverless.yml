@@ -19,7 +19,9 @@ provider:
         - ec2:DescribeNetworkInterfaces
         - ec2:DeleteNetworkInterface
       Resource: [
-          "arn:aws:s3:::it-audit-chatwork*",
+          {
+            "Fn::Join": ["", ["arn:aws:s3:::", { "Ref": "ServerlessDeploymentBucket" }]],
+          },
           "arn:aws:lambda:ap-northeast-1::function:it-audit-chatwork-tokinaga-dev-notify_chatwork"
         ]
 functions:
