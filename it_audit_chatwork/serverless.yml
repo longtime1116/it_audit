@@ -1,4 +1,4 @@
-service: it-audit-chatwork
+service: it-audit-chatwork-tokinaga
 provider:
   name: aws
   runtime: nodejs8.10
@@ -18,11 +18,10 @@ provider:
         - ec2:CreateNetworkInterface
         - ec2:DescribeNetworkInterfaces
         - ec2:DeleteNetworkInterface
-      Resource:
-        {
-          "Fn::Join":
-            ["", ["arn:aws:s3:::", { "Ref": "ServerlessDeploymentBucket" }]],
-        }
+      Resource: [
+          "arn:aws:s3:::it-audit-chatwork*",
+          "arn:aws:lambda:ap-northeast-1::function:it-audit-chatwork-tokinaga-dev-notify_chatwork"
+        ]
 functions:
   notify_chatwork:
     handler: handler.notify_chatwork
@@ -36,7 +35,7 @@ functions:
     handler: handler.invoke_notify_chatwork
     events:
       - schedule:
-          name: invoke_notify_chatwork_weekly
+          name: invoke_notify_chatwork_weekly-tokinaga
           rate: cron(0 3 ? * FRI *) # UTC
     vpc:
       securityGroupIds:

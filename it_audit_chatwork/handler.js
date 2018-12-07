@@ -6,7 +6,7 @@ const lambda = new AWS.Lambda();
 
 module.exports.invoke_notify_chatwork = async () => {
   const params = {
-    FunctionName: "it-audit-chatwork-dev-notify_chatwork",
+    FunctionName: "it-audit-chatwork-tokinaga-dev-notify_chatwork",
     InvocationType: "RequestResponse",
     LogType: "Tail"
   };
