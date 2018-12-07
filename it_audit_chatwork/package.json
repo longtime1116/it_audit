@@ -1,0 +1,7 @@
+{
+  "devDependencies": {},
+  "dependencies": {
+    "aws-sdk": "^2.362.0",
+    "node-fetch": "^2.3.0"
+  }
+}

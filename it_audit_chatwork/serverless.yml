@@ -1,0 +1,49 @@
+service: it-audit-chatwork
+provider:
+  name: aws
+  runtime: nodejs8.10
+  timeout: 60
+  region: ap-northeast-1
+  stage: dev
+  environment:
+    BACKLOG_API_KEY: ${file(./variables.yml):BACKLOG_API_KEY}
+    BACKLOG_ADMIN_PROJECT_ID: ${file(./variables.yml):BACKLOG_ADMIN_PROJECT_ID}
+    BACKLOG_DEV_PROJECT_ID: ${file(./variables.yml):BACKLOG_DEV_PROJECT_ID}
+    CHATWORK_API_TOKEN: ${file(./variables.yml):CHATWORK_API_TOKEN}
+    CHATWORK_APPROVAL_ROOM_ID: ${file(./variables.yml):CHATWORK_APPROVAL_ROOM_ID}
+  iamRoleStatements:
+    - Effect: "Allow"
+      Action:
+        - lambda:InvokeFunction
+        - ec2:CreateNetworkInterface
+        - ec2:DescribeNetworkInterfaces
+        - ec2:DeleteNetworkInterface
+      Resource:
+        {
+          "Fn::Join":
+            ["", ["arn:aws:s3:::", { "Ref": "ServerlessDeploymentBucket" }]],
+        }
+functions:
+  notify_chatwork:
+    handler: handler.notify_chatwork
+    vpc:
+      securityGroupIds:
+        - ${file(./variables.yml):SECURITY_GROUP_ID}
+      subnetIds:
+        - ${file(./variables.yml):SUBNET_ID_1}
+        - ${file(./variables.yml):SUBNET_ID_2}
+  invoke_notify_chatwork:
+    handler: handler.invoke_notify_chatwork
+    events:
+      - schedule:
+          name: invoke_notify_chatwork_weekly
+          rate: cron(0 3 ? * FRI *) # UTC
+    vpc:
+      securityGroupIds:
+        - ${file(./variables.yml):SECURITY_GROUP_ID}
+      subnetIds:
+        - ${file(./variables.yml):SUBNET_ID_1}
+        - ${file(./variables.yml):SUBNET_ID_2}
+package:
+  exclude:
+    - variables.yml

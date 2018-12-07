@@ -1,0 +1,384 @@
+ayumi_tamai@a-143 ~/it_audit_chatwork (master) $ sls invoke local -f notify_chatwork
+Serverless: Load command config
+Serverless: Load command config:credentials
+Serverless: Load command create
+Serverless: Load command install
+Serverless: Load command package
+Serverless: Load command deploy
+Serverless: Load command deploy:function
+Serverless: Load command deploy:list
+Serverless: Load command deploy:list:functions
+Serverless: Load command invoke
+Serverless: Load command invoke:local
+Serverless: Load command info
+Serverless: Load command logs
+Serverless: Load command login
+Serverless: Load command logout
+Serverless: Load command metrics
+Serverless: Load command print
+Serverless: Load command remove
+Serverless: Load command rollback
+Serverless: Load command rollback:function
+Serverless: Load command slstats
+Serverless: Load command plugin
+Serverless: Load command plugin
+Serverless: Load command plugin:install
+Serverless: Load command plugin
+Serverless: Load command plugin:uninstall
+Serverless: Load command plugin
+Serverless: Load command plugin:list
+Serverless: Load command plugin
+Serverless: Load command plugin:search
+Serverless: Load command config
+Serverless: Load command config:credentials
+Serverless: Load command rollback
+Serverless: Load command rollback:function
+Serverless: Invoke invoke:local
+Serverless: INVOKING INVOKE
+yuka.minemotoを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+yuto.chibaを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+anri.katsutaを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+yuka.nogiを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+mutsumi.haruyamaを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+katsunori.kawanishiを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+chikako.isogamiを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+kyj@topicimages.comを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+yuto.chibaを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+chikako.isogamiを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+chikako.isogamiを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+sipher.hsiehを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+ayako.matsudaを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+chikako.isogamiを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+edj@topicimages.comを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+katsuhiko.ito+backlogを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+lan.phamphuongを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+reiko.sakaiを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+chikako.isogamiを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+reiko.sakaiを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+reiko.sakaiを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+haruka.nishioを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+haruka.nishioを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+chikako.isogamiを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+asuka.katoを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+chiemi.nakagawaを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+mami.yamamotoを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+asuka.katoを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+misaki.miuraを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+kenta.uesugiを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+okaを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+takahiro.nagamotoを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+lsk@topicimages.comを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+piya.taerungruangを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+khanh.caoduyを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+khanh.caoduyを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+khanh.caoduyを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+thanh.nguyenvanを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+piya.taerungruangを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+khanh.caoduyを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+khanh.caoduyを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+khanh.caoduyを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+moeko.onakaを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+tri.vovanを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+tri.vovanを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+piya.taerungruangを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+kenzaburo.takagiを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+thanh.nguyenvanを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+katsuhiko.ito+backlogを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+khanh.caoduyを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+khanh.caoduyを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+khuyen.nguyenthiを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+khanh.caoduyを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+ayako.matsudaを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+kenzaburo.takagiを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+khuyen.nguyenthiを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+hiroaki.shimohiraを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+kenzaburo.takagiを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+hiroaki.shimohiraを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+thu.duongminhを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+haruka.nishioを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+duong.dodaiを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+dai.kaibazawaを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+kenzaburo.takagiを名寄せできませんでした。星さん・時長さん・玉井 にメンションします。
+[To:3242516]細谷 圭野 / Keino Hosoya
+このチケットは処理済みになったので、確認の上完了にしてください。
+https://pixta.backlog.jp/view/ADMIN-1221
+ADMIN-1221 の完了を依頼しました。
+[To:2155457]菊池 努 / Tsutomu Kikuchi （17時退社）
+このチケットは処理済みになったので、確認の上完了にしてください。
+https://pixta.backlog.jp/view/ADMIN-1217
+https://pixta.backlog.jp/view/ADMIN-963
+https://pixta.backlog.jp/view/ADMIN-863
+ADMIN-1217, ADMIN-963, ADMIN-863 の完了を依頼しました。
+[To:1834966]野口 亨子 / Ryoko Noguchi
+このチケットは処理済みになったので、確認の上完了にしてください。
+https://pixta.backlog.jp/view/ADMIN-1215
+ADMIN-1215 の完了を依頼しました。
+[To:1081210]古川朋佳（Tomoka Furukawa）
+このチケットは処理済みになったので、確認の上完了にしてください。
+https://pixta.backlog.jp/view/ADMIN-1209
+https://pixta.backlog.jp/view/ADMIN-1200
+ADMIN-1209, ADMIN-1200 の完了を依頼しました。
+[To:597933]小川 将弘 / Masahiro Ogawa
+このチケットは処理済みになったので、確認の上完了にしてください。
+https://pixta.backlog.jp/view/ADMIN-1197
+ADMIN-1197 の完了を依頼しました。
+[To:368054]和氣 知美 tomomi waki（10-17時／水曜休み）
+このチケットは処理済みになったので、確認の上完了にしてください。
+https://pixta.backlog.jp/view/ADMIN-1183
+ADMIN-1183 の完了を依頼しました。
+[To:3226080]塚田 萌 / Megumi Tsukada
+このチケットは処理済みになったので、確認の上完了にしてください。
+https://pixta.backlog.jp/view/ADMIN-1116
+ADMIN-1116 の完了を依頼しました。
+[To:2206114]村上結理/Yuuri Murakami
+このチケットは処理済みになったので、確認の上完了にしてください。
+https://pixta.backlog.jp/view/ADMIN-1107
+https://pixta.backlog.jp/view/ADMIN-1029
+ADMIN-1107, ADMIN-1029 の完了を依頼しました。
+[To:3298552]小澤 映介 / Eisuke Ozawa
+このチケットは処理済みになったので、確認の上完了にしてください。
+https://pixta.backlog.jp/view/ADMIN-1102
+ADMIN-1102 の完了を依頼しました。
+[To:2129811]Nydia / 莊 蕙慈
+このチケットは処理済みになったので、確認の上完了にしてください。
+https://pixta.backlog.jp/view/ADMIN-1100
+https://pixta.backlog.jp/view/ADMIN-815
+ADMIN-1100, ADMIN-815 の完了を依頼しました。
+[To:1877087]森本 律子 / Ritsuko Morimoto
+このチケットは処理済みになったので、確認の上完了にしてください。
+https://pixta.backlog.jp/view/ADMIN-1064
+ADMIN-1064 の完了を依頼しました。
+[To:2120734]藤田 健吾(Fujita Kengo)
+このチケットは処理済みになったので、確認の上完了にしてください。
+https://pixta.backlog.jp/view/ADMIN-1032
+https://pixta.backlog.jp/view/DEV-21508
+https://pixta.backlog.jp/view/DEV-20542
+https://pixta.backlog.jp/view/DEV-19892
+ADMIN-1032, DEV-21508, DEV-20542, DEV-19892 の完了を依頼しました。
+[To:2006389]吉田 友美 / Tomomi Yoshida / 7月3日まで出社
+このチケットは処理済みになったので、確認の上完了にしてください。
+https://pixta.backlog.jp/view/ADMIN-1030
+https://pixta.backlog.jp/view/DEV-20346
+https://pixta.backlog.jp/view/DEV-20345
+ADMIN-1030, DEV-20346, DEV-20345 の完了を依頼しました。
+[To:3061013]奥山 千尋 / Chihiro Okuyama
+このチケットは処理済みになったので、確認の上完了にしてください。
+https://pixta.backlog.jp/view/ADMIN-1004
+https://pixta.backlog.jp/view/ADMIN-993
+ADMIN-1004, ADMIN-993 の完了を依頼しました。
+[To:1449810]仆公 / Yuki Ito / 伊藤 裕希 17時退社
+このチケットは処理済みになったので、確認の上完了にしてください。
+https://pixta.backlog.jp/view/ADMIN-1002
+https://pixta.backlog.jp/view/DEV-21391
+https://pixta.backlog.jp/view/DEV-21287
+ADMIN-1002, DEV-21391, DEV-21287 の完了を依頼しました。
+[To:2541412]鈴木瑞穂 Mizuho Suzuki
+このチケットは処理済みになったので、確認の上完了にしてください。
+https://pixta.backlog.jp/view/ADMIN-899
+ADMIN-899 の完了を依頼しました。
+[To:1387471]金 麗日 / Ryeoil Kim
+このチケットは処理済みになったので、確認の上完了にしてください。
+https://pixta.backlog.jp/view/ADMIN-869
+https://pixta.backlog.jp/view/ADMIN-756
+https://pixta.backlog.jp/view/ADMIN-703
+https://pixta.backlog.jp/view/DEV-20611
+ADMIN-869, ADMIN-756, ADMIN-703, DEV-20611 の完了を依頼しました。
+[To:2396190]岡田 幸洋 /Yukihiro Okada
+このチケットは処理済みになったので、確認の上完了にしてください。
+https://pixta.backlog.jp/view/ADMIN-859
+ADMIN-859 の完了を依頼しました。
+[To:493567]鈴木慎悟 | Shingo
+このチケットは処理済みになったので、確認の上完了にしてください。
+https://pixta.backlog.jp/view/ADMIN-851
+ADMIN-851 の完了を依頼しました。
+[To:1730436]椙浦 弘之 / Hiroyuki Sugiura
+このチケットは処理済みになったので、確認の上完了にしてください。
+https://pixta.backlog.jp/view/ADMIN-826
+https://pixta.backlog.jp/view/DEV-20200
+https://pixta.backlog.jp/view/DEV-20061
+https://pixta.backlog.jp/view/DEV-19791
+https://pixta.backlog.jp/view/DEV-19302
+ADMIN-826, DEV-20200, DEV-20061, DEV-19791, DEV-19302 の完了を依頼しました。
+[To:1270498]萩野 一平 / Ippei Hagino
+このチケットは処理済みになったので、確認の上完了にしてください。
+https://pixta.backlog.jp/view/ADMIN-812
+https://pixta.backlog.jp/view/ADMIN-695
+https://pixta.backlog.jp/view/DEV-21063
+https://pixta.backlog.jp/view/DEV-21020
+https://pixta.backlog.jp/view/DEV-20496
+https://pixta.backlog.jp/view/DEV-20390
+https://pixta.backlog.jp/view/DEV-20173
+https://pixta.backlog.jp/view/DEV-19809
+ADMIN-812, ADMIN-695, DEV-21063, DEV-21020, DEV-20496, DEV-20390, DEV-20173, DEV-19809 の完了を依頼しました。
+[To:2353075]Esther (エスター) / 李 亭諭
+このチケットは処理済みになったので、確認の上完了にしてください。
+https://pixta.backlog.jp/view/ADMIN-774
+ADMIN-774 の完了を依頼しました。
+[To:509597](*) 直史 / Naoshi
+このチケットは処理済みになったので、確認の上完了にしてください。
+https://pixta.backlog.jp/view/ADMIN-759
+https://pixta.backlog.jp/view/DEV-19953
+https://pixta.backlog.jp/view/DEV-19525
+https://pixta.backlog.jp/view/DEV-19504
+https://pixta.backlog.jp/view/DEV-19488
+ADMIN-759, DEV-19953, DEV-19525, DEV-19504, DEV-19488 の完了を依頼しました。
+[To:2080507]河添 順一 / Junichi Kawazoe
+このチケットは処理済みになったので、確認の上完了にしてください。
+https://pixta.backlog.jp/view/DEV-21553
+https://pixta.backlog.jp/view/DEV-21084
+DEV-21553, DEV-21084 の完了を依頼しました。
+[To:3379511]山崎 真宏 / Masahiro Yamazaki
+このチケットは処理済みになったので、確認の上完了にしてください。
+https://pixta.backlog.jp/view/DEV-21536
+https://pixta.backlog.jp/view/DEV-21354
+https://pixta.backlog.jp/view/DEV-21198
+DEV-21536, DEV-21354, DEV-21198 の完了を依頼しました。
+[To:1971141]長屋 実友/Miyu Nagaya
+このチケットは処理済みになったので、確認の上完了にしてください。
+https://pixta.backlog.jp/view/DEV-21483
+https://pixta.backlog.jp/view/DEV-20469
+DEV-21483, DEV-20469 の完了を依頼しました。
+[To:1929642]林 可 リンカ/ Nicole Lin
+このチケットは処理済みになったので、確認の上完了にしてください。
+https://pixta.backlog.jp/view/DEV-21385
+DEV-21385 の完了を依頼しました。
+[To:2908455]玉井 あゆみ / Ayumi Tamai
+このチケットは処理済みになったので、確認の上完了にしてください。
+https://pixta.backlog.jp/view/DEV-21294
+https://pixta.backlog.jp/view/DEV-21293
+https://pixta.backlog.jp/view/DEV-21292
+https://pixta.backlog.jp/view/DEV-21291
+https://pixta.backlog.jp/view/DEV-21290
+https://pixta.backlog.jp/view/DEV-21163
+DEV-21294, DEV-21293, DEV-21292, DEV-21291, DEV-21290, DEV-21163 の完了を依頼しました。
+[To:405570]宇田川 直輝 / Naoki Udagawa
+このチケットは処理済みになったので、確認の上完了にしてください。
+https://pixta.backlog.jp/view/DEV-21217
+https://pixta.backlog.jp/view/DEV-20732
+https://pixta.backlog.jp/view/DEV-20610
+https://pixta.backlog.jp/view/DEV-20520
+https://pixta.backlog.jp/view/DEV-20457
+https://pixta.backlog.jp/view/DEV-19631
+https://pixta.backlog.jp/view/DEV-19420
+DEV-21217, DEV-20732, DEV-20610, DEV-20520, DEV-20457, DEV-19631, DEV-19420 の完了を依頼しました。
+[To:3171812]徳田　寛子 / Hiroko Tokuda
+このチケットは処理済みになったので、確認の上完了にしてください。
+https://pixta.backlog.jp/view/DEV-21169
+DEV-21169 の完了を依頼しました。
+[To:2120739]大嶋 美樹 / Miki Oshima
+このチケットは処理済みになったので、確認の上完了にしてください。
+https://pixta.backlog.jp/view/DEV-20969
+DEV-20969 の完了を依頼しました。
+[To:3151131]高橋 将也 / Masaya Takahashi
+このチケットは処理済みになったので、確認の上完了にしてください。
+https://pixta.backlog.jp/view/DEV-20870
+https://pixta.backlog.jp/view/DEV-20646
+https://pixta.backlog.jp/view/DEV-20614
+https://pixta.backlog.jp/view/DEV-20486
+https://pixta.backlog.jp/view/DEV-20481
+DEV-20870, DEV-20646, DEV-20614, DEV-20486, DEV-20481 の完了を依頼しました。
+[To:3065714]谷口 翔太 / Shota Taniguchi
+このチケットは処理済みになったので、確認の上完了にしてください。
+https://pixta.backlog.jp/view/DEV-20421
+https://pixta.backlog.jp/view/DEV-20170
+DEV-20421, DEV-20170 の完了を依頼しました。
+[To:655522]佐々木 聖一 / sasaki
+このチケットは処理済みになったので、確認の上完了にしてください。
+https://pixta.backlog.jp/view/DEV-20329
+https://pixta.backlog.jp/view/DEV-19298
+DEV-20329, DEV-19298 の完了を依頼しました。
+[To:2541415]時長 秀茂/Shumo Tokinaga
+このチケットは処理済みになったので、確認の上完了にしてください。
+https://pixta.backlog.jp/view/DEV-20300
+https://pixta.backlog.jp/view/DEV-20225
+DEV-20300, DEV-20225 の完了を依頼しました。
+[To:2013898]高瀬 和典 / kazunori takase
+このチケットは処理済みになったので、確認の上完了にしてください。
+https://pixta.backlog.jp/view/DEV-20280
+https://pixta.backlog.jp/view/DEV-20120
+https://pixta.backlog.jp/view/DEV-20031
+DEV-20280, DEV-20120, DEV-20031 の完了を依頼しました。
+[To:1418760]兵頭蘭 / ran
+このチケットは処理済みになったので、確認の上完了にしてください。
+https://pixta.backlog.jp/view/DEV-20126
+https://pixta.backlog.jp/view/DEV-19804
+https://pixta.backlog.jp/view/DEV-19803
+https://pixta.backlog.jp/view/DEV-19799
+https://pixta.backlog.jp/view/DEV-19748
+https://pixta.backlog.jp/view/DEV-19744
+DEV-20126, DEV-19804, DEV-19803, DEV-19799, DEV-19748, DEV-19744 の完了を依頼しました。
+[To:2120725]Duy Trinh Duc / ｽﾞｨ
+このチケットは処理済みになったので、確認の上完了にしてください。
+https://pixta.backlog.jp/view/DEV-19402
+https://pixta.backlog.jp/view/DEV-19382
+https://pixta.backlog.jp/view/DEV-19310
+DEV-19402, DEV-19382, DEV-19310 の完了を依頼しました。
+[To:509597] (*) 直史 / Naoshiさん
+[To: 2541415] 時長 秀茂 / Shumo Tokinagaさん
+[To: 2908455] 玉井 あゆみ / Ayumi Tamaiさん 
+このチケットは処理済みになったので、確認の上完了にしてください。
+https://pixta.backlog.jp/view/ADMIN-1191
+https://pixta.backlog.jp/view/ADMIN-1181
+https://pixta.backlog.jp/view/ADMIN-1179
+https://pixta.backlog.jp/view/ADMIN-1178
+https://pixta.backlog.jp/view/ADMIN-1172
+https://pixta.backlog.jp/view/ADMIN-1154
+https://pixta.backlog.jp/view/ADMIN-1137
+https://pixta.backlog.jp/view/ADMIN-1129
+https://pixta.backlog.jp/view/ADMIN-1106
+https://pixta.backlog.jp/view/ADMIN-1098
+https://pixta.backlog.jp/view/ADMIN-1097
+https://pixta.backlog.jp/view/ADMIN-1096
+https://pixta.backlog.jp/view/ADMIN-1093
+https://pixta.backlog.jp/view/ADMIN-1039
+https://pixta.backlog.jp/view/ADMIN-1025
+https://pixta.backlog.jp/view/ADMIN-1016
+https://pixta.backlog.jp/view/ADMIN-992
+https://pixta.backlog.jp/view/ADMIN-955
+https://pixta.backlog.jp/view/ADMIN-951
+https://pixta.backlog.jp/view/ADMIN-932
+https://pixta.backlog.jp/view/ADMIN-912
+https://pixta.backlog.jp/view/ADMIN-896
+https://pixta.backlog.jp/view/ADMIN-895
+https://pixta.backlog.jp/view/ADMIN-866
+https://pixta.backlog.jp/view/ADMIN-843
+https://pixta.backlog.jp/view/ADMIN-841
+https://pixta.backlog.jp/view/ADMIN-835
+https://pixta.backlog.jp/view/ADMIN-828
+https://pixta.backlog.jp/view/ADMIN-806
+https://pixta.backlog.jp/view/ADMIN-798
+https://pixta.backlog.jp/view/ADMIN-742
+https://pixta.backlog.jp/view/ADMIN-651
+https://pixta.backlog.jp/view/DEV-21388
+https://pixta.backlog.jp/view/DEV-21364
+https://pixta.backlog.jp/view/DEV-21303
+https://pixta.backlog.jp/view/DEV-21239
+https://pixta.backlog.jp/view/DEV-21151
+https://pixta.backlog.jp/view/DEV-21143
+https://pixta.backlog.jp/view/DEV-20964
+https://pixta.backlog.jp/view/DEV-20884
+https://pixta.backlog.jp/view/DEV-20873
+https://pixta.backlog.jp/view/DEV-20858
+https://pixta.backlog.jp/view/DEV-20856
+https://pixta.backlog.jp/view/DEV-20809
+https://pixta.backlog.jp/view/DEV-20695
+https://pixta.backlog.jp/view/DEV-20686
+https://pixta.backlog.jp/view/DEV-20685
+https://pixta.backlog.jp/view/DEV-20528
+https://pixta.backlog.jp/view/DEV-20477
+https://pixta.backlog.jp/view/DEV-20459
+https://pixta.backlog.jp/view/DEV-20387
+https://pixta.backlog.jp/view/DEV-20386
+https://pixta.backlog.jp/view/DEV-20349
+https://pixta.backlog.jp/view/DEV-20282
+https://pixta.backlog.jp/view/DEV-20141
+https://pixta.backlog.jp/view/DEV-20123
+https://pixta.backlog.jp/view/DEV-20092
+https://pixta.backlog.jp/view/DEV-19985
+https://pixta.backlog.jp/view/DEV-19929
+https://pixta.backlog.jp/view/DEV-19814
+https://pixta.backlog.jp/view/DEV-19646
+https://pixta.backlog.jp/view/DEV-19440
+https://pixta.backlog.jp/view/DEV-19342
+https://pixta.backlog.jp/view/DEV-19312
+ADMIN-1191, ADMIN-1181, ADMIN-1179, ADMIN-1178, ADMIN-1172, ADMIN-1154, ADMIN-1137, ADMIN-1129, ADMIN-1106, ADMIN-1098, ADMIN-1097, ADMIN-1096, ADMIN-1093, ADMIN-1039, ADMIN-1025, ADMIN-1016, ADMIN-992, ADMIN-955, ADMIN-951, ADMIN-932, ADMIN-912, ADMIN-896, ADMIN-895, ADMIN-866, ADMIN-843, ADMIN-841, ADMIN-835, ADMIN-828, ADMIN-806, ADMIN-798, ADMIN-742, ADMIN-651, DEV-21388, DEV-21364, DEV-21303, DEV-21239, DEV-21151, DEV-21143, DEV-20964, DEV-20884, DEV-20873, DEV-20858, DEV-20856, DEV-20809, DEV-20695, DEV-20686, DEV-20685, DEV-20528, DEV-20477, DEV-20459, DEV-20387, DEV-20386, DEV-20349, DEV-20282, DEV-20141, DEV-20123, DEV-20092, DEV-19985, DEV-19929, DEV-19814, DEV-19646, DEV-19440, DEV-19342, DEV-19312 の完了を依頼しました。
